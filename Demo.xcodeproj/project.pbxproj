@@ -13,6 +13,7 @@
 		1AC6FE701D3202C000E40842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6FE6E1D3202C000E40842 /* Main.storyboard */; };
 		1AC6FE721D3202C000E40842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6FE711D3202C000E40842 /* Assets.xcassets */; };
 		1AC6FE751D3202C000E40842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6FE731D3202C000E40842 /* LaunchScreen.storyboard */; };
+		1AC6FE7E1D32034000E40842 /* DSWModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6FE7D1D32034000E40842 /* DSWModelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1AC6FE711D3202C000E40842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC6FE741D3202C000E40842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC6FE761D3202C000E40842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC6FE7C1D32034000E40842 /* DSWModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSWModelViewController.h; sourceTree = "<group>"; };
+		1AC6FE7D1D32034000E40842 /* DSWModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSWModelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				1AC6FE691D3202C000E40842 /* AppDelegate.m */,
 				1AC6FE6B1D3202C000E40842 /* ViewController.h */,
 				1AC6FE6C1D3202C000E40842 /* ViewController.m */,
+				1AC6FE7C1D32034000E40842 /* DSWModelViewController.h */,
+				1AC6FE7D1D32034000E40842 /* DSWModelViewController.m */,
 				1AC6FE6E1D3202C000E40842 /* Main.storyboard */,
 				1AC6FE711D3202C000E40842 /* Assets.xcassets */,
 				1AC6FE731D3202C000E40842 /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC6FE6D1D3202C000E40842 /* ViewController.m in Sources */,
+				1AC6FE7E1D32034000E40842 /* DSWModelViewController.m in Sources */,
 				1AC6FE6A1D3202C000E40842 /* AppDelegate.m in Sources */,
 				1AC6FE671D3202C000E40842 /* main.m in Sources */,
 			);
@@ -264,7 +270,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dj.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,7 +283,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.dj.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +311,7 @@
 				1AC6FE7B1D3202C000E40842 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

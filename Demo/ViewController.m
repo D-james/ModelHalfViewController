@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DSWModelViewController.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)ModelDidClick:(id)sender {
+    
+    DSWModelViewController *modelVC = [[DSWModelViewController alloc]init];
+    
+    modelVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    
+    [self presentViewController:modelVC animated:YES completion:nil];
 }
 
 @end
